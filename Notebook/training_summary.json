@@ -1,0 +1,34 @@
+{
+  "config": {
+    "csv_path": "D:/Projects/water_filter_membrane_pred/raw_data/membrane_dataset2.csv",
+    "sequence_length": 60,
+    "stride": 5,
+    "batch_size": 64,
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "d_model": 128,
+    "nhead": 8,
+    "num_layers": 4,
+    "dim_feedforward": 512,
+    "dropout": 0.1,
+    "num_epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "patience": 15,
+    "device": "cpu",
+    "model_save_path": "best_transformer_rul_model.pt",
+    "scaler_X_path": "scaler_X.pkl",
+    "scaler_y_path": "scaler_y.pkl"
+  },
+  "model_params": {
+    "input_projection": 3200,
+    "pos_encoder": 0,
+    "transformer_encoder": 793088,
+    "regression_head": 75137,
+    "total": 871425
+  },
+  "test_metrics": {
+    "mae": 98.05821990966797,
+    "rmse": 111.42683014679409,
+    "r2": 0.9434278011322021,
+    "mape": 
